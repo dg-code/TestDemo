@@ -18,7 +18,7 @@ For the moment it is possible to run the tests only via Eclipse IDE. For this to
 
 ## Test Suites
 
-Currently under '/src/test/resources/' there are three test suits one for each browser 'Chrome' or 'Firefox' and one suite for the api tests
+Currently under '/src/test/resources/' there are three test suites one for each browser 'Chrome' or 'Firefox' and one suite for the api tests
 
 ## Test Reports
 
