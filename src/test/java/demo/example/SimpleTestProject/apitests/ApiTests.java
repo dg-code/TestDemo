@@ -25,7 +25,7 @@ public class ApiTests {
 	@BeforeClass
 	public void initPath() {
 
-		RestAssured.baseURI = "https://www.adidas.fi";
+		RestAssured.baseURI = "https://www.bla.fi";
 	}
 
 	/*******************************************************
