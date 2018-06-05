@@ -4,8 +4,7 @@
 .settings/
 
 #TestNG
-# test-output/
+test-output/
 
 # Maven
-
 target/
