@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class ApiTests {
+public class ApiTestsIT {
 	
 	@BeforeClass
 	public void initPath() {
