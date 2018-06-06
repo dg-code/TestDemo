@@ -17,6 +17,8 @@ pipeline {
         }
     }
     post('Publish Reports') {
-    	junit 'target/failsafe-reports/junitreports/*.xml'
+    	always {
+    		junit 'target/failsafe-reports/junitreports/*.xml'
+		}
     }
 }
