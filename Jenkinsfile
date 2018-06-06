@@ -7,14 +7,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hello, Maven'
-                bat 'mvn -version'
+                bat 'mvn clean'
             }
         }
-        stage('Example Test') {
+        stage('Test') {
             steps {
-                echo 'Hello, JDK'
-                bat 'java -version'
+            	bat 'mvn clean'
             }
         }
     }
