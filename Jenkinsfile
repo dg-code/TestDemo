@@ -14,7 +14,7 @@ pipeline {
         stage('Example Test') {
             steps {
                 echo 'Hello, JDK'
-                sh 'java -version'
+                bat 'java -version'
             }
         }
     }
