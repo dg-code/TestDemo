@@ -15,15 +15,17 @@ pipeline {
             	bat 'mvn verify'
             }
         }
-        post('Publish Reports') {
-        	publishHTML target: [
-            	allowMissing: false,
-            	alwaysLinkToLastBuild: false,
-            	keepAll: true,
-            	reportDir: 'target/failsafe-reports',
-            	reportFiles: 'index.html',
-            	reportName: 'Test Report'
-        	]
-        }
+    }
+    post('Publish Reports') {
+    	always {
+    		publishHTML (target: [
+		      allowMissing: false,
+		      alwaysLinkToLastBuild: false,
+		      keepAll: true,
+		      reportDir: 'target/failsafe-reports',
+		      reportFiles: 'index.html',
+		      reportName: "Test Report"
+		    ])
+    	}
     }
 }
