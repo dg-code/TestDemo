@@ -63,9 +63,9 @@
 							<suiteXmlFiles>
 								<suiteXmlFile>src/test/resources/testng-api.xml</suiteXmlFile>
 							</suiteXmlFiles>
-							<includes>
-								<include>**/*Test.java</include>
-							</includes>
+<!-- 							<includes> -->
+<!-- 								<include>**/*Test.java</include> -->
+<!-- 							</includes> -->
 						</configuration>
 						<executions>
 							<execution>
