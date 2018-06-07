@@ -29,4 +29,16 @@ public class CheckResponseSpeedAPI {
 			assertThat().
 				time(lessThan(1000L), TimeUnit.MILLISECONDS);
 	}
+	
+	@Test
+	public void checkResponseStatusOK() {
+
+		given().
+			contentType("application/json").
+		when().
+			get("/api/users?page=2").
+		then().
+			assertThat().
+				statusCode(200);
+	}
 }
