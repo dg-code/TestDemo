@@ -15,7 +15,7 @@ public class CheckResponseSpeedAPI {
 	@BeforeClass
 	public void initPath() {
 
-		RestAssured.baseURI = "https://www.blabla.fi";
+		RestAssured.baseURI = "https://reqres.in";
 	}
 
 	@Test
@@ -24,7 +24,7 @@ public class CheckResponseSpeedAPI {
 		given().
 			contentType("application/json").
 		when().
-			get("/api/pages/landing?path=/").
+			get("/api/users?page=2").
 		then().
 			assertThat().
 				time(lessThan(1000L), TimeUnit.MILLISECONDS);
