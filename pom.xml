@@ -64,7 +64,7 @@
 								<suiteXmlFile>src/test/resources/testng-api.xml</suiteXmlFile>
 							</suiteXmlFiles>
 							<includes>
-								<include>%regex[.*Test.*]</include>
+								<include>%regex[.*API.*]</include>
 							</includes>
 						</configuration>
 						<executions>
