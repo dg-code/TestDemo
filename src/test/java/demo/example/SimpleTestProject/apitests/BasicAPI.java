@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
 
-public class CheckResponseSpeedAPI {
+public class BasicAPI {
 	
 	@BeforeClass
 	public void initPath() {
